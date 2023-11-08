@@ -17,14 +17,14 @@ function EditCardScreen() {
   const history = useHistory();
 
   useEffect(() => {
-    // function to load the deck from the API
+    //load the deck from the API
     async function loadDeck() {
       const response = readDeck(deckId);
       const deckFromAPI = await response;
       setDeck(deckFromAPI);
     }
 
-    // function to load the card from the API
+    //load the card from the API
     async function loadCard() {
       const response = readCard(cardId);
       const cardFromAPI = await response;
@@ -36,12 +36,11 @@ function EditCardScreen() {
     loadCard();
   }, [deckId, cardId]);
 
-  // handling form changes
+  // handling form changes for front and back of cards
   const handleCardFrontChange = (event) => setCardFront(event.target.value);
   const handleCardBackChange = (event) => setCardBack(event.target.value);
 
   // Updating the card with the changes to the front and back of the card
-  // Clicking submit will also then take the user back to that deck's screen
   const handleEditCardSubmit = (event) => {
     event.preventDefault();
     updateCard({ ...preExistingCard, front: cardFront, back: cardBack })
