@@ -8,7 +8,7 @@ import Study from "./decks-study/Study";
 import CreateDeckScreen from "./decks-new/CreateDeckScreen";
 import DeckScreen from "./decks/DeckScreen";
 import EditDeckScreen from "./decks-edit/EditDeckScreen";
-// import AddCardScreen from "./decks-cards/new/AddCardScreen";
+import AddCardScreen from "./decks-cards/new/AddCardScreen";
 // import EditCardScreen from "./decks-cards/edit/EditCardScreen";
 import NotFound from "./NotFound";
 
@@ -26,11 +26,11 @@ function Layout() {
             <CreateDeckScreen />
           </Route>
 
-          {/* <Route path="/decks/:deckId/cards/new">
+          <Route path="/decks/:deckId/cards/new">
             <AddCardScreen />
           </Route>
 
-          <Route path="/decks/:deckId/cards/:cardId/edit">
+          {/* <Route path="/decks/:deckId/cards/:cardId/edit">
             <EditCardScreen />
           </Route>*/}
 
