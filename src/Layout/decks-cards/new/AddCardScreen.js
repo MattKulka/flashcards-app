@@ -12,7 +12,6 @@ function AddCardScreen() {
   const [cardBack, setCardBack] = useState("");
   const deckId = useParams().deckId;
 
-  // Loading the deck from the API
   useEffect(() => {
     async function loadDeck() {
       const response = readDeck(deckId);
@@ -22,7 +21,7 @@ function AddCardScreen() {
     loadDeck();
   }, [deckId]);
 
-  // Handling changes to the card front and card back from the form
+  // Handling changes to the front and back  of the card from the form
   const handleCardFrontChange = (event) => setCardFront(event.target.value);
   const handleCardBackChange = (event) => setCardBack(event.target.value);
 
