@@ -4,12 +4,12 @@ import "./Layout.css";
 
 import Header from "./Header";
 import Home from "./home/Home";
-import Study from "./decks-study/Study";
-import CreateDeckScreen from "./decks-new/CreateDeckScreen";
-import DeckScreen from "./decks/DeckScreen";
-import EditDeckScreen from "./decks-edit/EditDeckScreen";
-import AddCardScreen from "./decks-cards/new/AddCardScreen";
-import EditCardScreen from "./decks-cards/edit/EditCardScreen";
+// import Study from "./decks-study/Study";
+// import CreateDeckScreen from "./decks-new/CreateDeckScreen";
+// import DeckScreen from "./decks/DeckScreen";
+// import EditDeckScreen from "./decks-edit/EditDeckScreen";
+// import AddCardScreen from "./decks-cards/new/AddCardScreen";
+// import EditCardScreen from "./decks-cards/edit/EditCardScreen";
 import NotFound from "./NotFound";
 
 function Layout() {
