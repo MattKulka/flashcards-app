@@ -6,7 +6,7 @@ import Header from "./Header";
 import Home from "./home/Home";
 // import Study from "./decks-study/Study";
 // import CreateDeckScreen from "./decks-new/CreateDeckScreen";
-// import DeckScreen from "./decks/DeckScreen";
+import DeckScreen from "./decks/DeckScreen";
 // import EditDeckScreen from "./decks-edit/EditDeckScreen";
 // import AddCardScreen from "./decks-cards/new/AddCardScreen";
 // import EditCardScreen from "./decks-cards/edit/EditCardScreen";
@@ -22,7 +22,7 @@ function Layout() {
             <Home />
           </Route>
 
-          <Route path="/decks/new">
+          {/* <Route path="/decks/new">
             <CreateDeckScreen />
           </Route>
 
@@ -40,7 +40,7 @@ function Layout() {
 
           <Route path="/decks/:deckId/study">
             <Study />
-          </Route>
+          </Route> */}
 
           <Route path="/decks/:deckId">
             <DeckScreen />
