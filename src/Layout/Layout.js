@@ -22,21 +22,21 @@ function Layout() {
             <Home />
           </Route>
 
-          {/* <Route path="/decks/new">
+          <Route path="/decks/new">
             <CreateDeckScreen />
           </Route>
 
-          <Route path="/decks/:deckId/cards/new">
+          {/* <Route path="/decks/:deckId/cards/new">
             <AddCardScreen />
           </Route>
 
           <Route path="/decks/:deckId/cards/:cardId/edit">
             <EditCardScreen />
-          </Route>
+          </Route>*/}
 
           <Route path="/decks/:deckId/edit">
             <EditDeckScreen />
-          </Route>*/}
+          </Route>
 
           <Route path="/decks/:deckId/study">
             <Study />
