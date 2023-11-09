@@ -10,7 +10,7 @@ import DeleteDeckButton from "./DeleteDeckButton";
 function Home() {
   const [decks, setDecks] = useState([]);
 
-  // Loading all of the decks from the API
+  // Loading all of the decks from the API to display
   useEffect(() => {
     async function loadDecks() {
       const response = listDecks();
