@@ -5,7 +5,7 @@ import { deleteCard } from "../../utils/api/index";
 function DeckScreenCard({ cards, deckId, url }) {
   const history = useHistory();
 
-  /* When the user clicks the "Delete" button a message will show */
+  /* When the user clicks the "Delete" button a confirmation message will show */
   const handleDeleteCardClick = (card) => {
     if (
       window.confirm("Delete this card? You will not be able to recover it.")
